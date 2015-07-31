@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Custom World Tour </title>
+        <script type="text/javascript" src="../bower_components/d3/d3.min.js"></script>
+        <script type="text/javascript" src="../bower_components/topojson/topojson.js"></script>
+        <script type="text/javascript" src="../bower_components/queue-async/queue.min.js"></script>
+        <style media="screen">
+            .appContainer {
+                width : 1445px;
+                height : 700px;
+            }
+            .worldSide {
+                width : 69%;
+                height : 100%;
+                float : right;
+            }
+            .countrySide {
+                width : 30%;
+                height : 100%;
+                float : left;
+                overflow-y: auto;
+            }
+            .container {
+                background-color : rgba(4, 148, 101, 0.2);
+                border-radius : 10px;
+                border-style : solid;
+                border-color : black;
+            }
+            .countryContainer {
+                position : relative;
+                display : block;
+            }
+            .country {
+                width : 20%;
+                height : 60px;
+                margin : 5px;
+                border-style : dashed;
+                border-color : gray;
+                opacity : .4;
+                float: left;
+                cursor: pointer;
+            }
+            .countryName {
+                opacity : 1.0;
+                font-size : 12px;
+                text-align : center;
+                word-wrap: break-word;
+            }
+            h3 {
+                font-size: 40px;
+                font-family: georgia, sans-serif;
+                text-align: center;
+                margin-top: 50px;
+            }
+            canvas {
+                border-radius : .5px;
+                border-color : black;
+                border-style : groove;
+                margin-left : 15px;
+            }
+            h1 {
+                position : absolute;
+                top: 360px;
+                font-family: georgia, sans-serif;
+                font-size: 18px;
+                text-align: center;
+                width: 960px;
+                margin-left : 10px;
+            }
+            #tourStart {
+                background-color : rgba(74, 125, 205, .8);
+                margin-left : 10px;
+                margin-top : 10px;
+                font-family : georgia, sans-serif;
+                font-size : 15px;
+                font-weight: bold;
+                border-radius: 3px;
+                border-width: 1px;
+                border-color : black;
+                box-shadow :
+            }
+        </style>
+    </head>
+    <body>
+        <div class="appContainer">
+            <div class="worldSide container">
+                <button type="button" id="tourStart"> Start Tour! </button>
+                <h3> Custom World Tour </h3>
+                <div class="worldContainer"></div>
+            </div>
+            <div class="countrySide container">
+                <div class="countryContainer"></div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>
