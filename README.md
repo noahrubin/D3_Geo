@@ -1,5 +1,5 @@
 # D3_Geo - World Tour Visualization
-Project for http://startmart.us/ showing global partners
+Project for http://startmart.us/ showing global partners <br>
 Inspired by http://bl.ocks.org/mbostock/4183330
 
 Instructions
