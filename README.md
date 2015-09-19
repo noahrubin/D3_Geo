@@ -1,4 +1,4 @@
-# D3_Geo
+# D3_Geo - World Tour Visualization
 Project for http://startmart.us/ showing global partners
 
 Instructions
